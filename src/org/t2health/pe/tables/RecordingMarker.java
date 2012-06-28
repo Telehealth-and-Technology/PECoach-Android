@@ -1,0 +1,81 @@
+package org.t2health.pe.tables;
+
+import org.t2health.pe.db.DBAdapter;
+import org.t2health.pe.db.Table;
+
+import android.content.ContentValues;
+import android.database.Cursor;
+
+public class RecordingMarker extends Table {
+	public static final String TABLE_NAME = "recording_marker";
+	public static final String FIELD_RECORDING_ID = "recording_id";
+	public static final String FIELD_TIME_START = "time_start";
+	public static final String FIELD_TIME_END = "time_end";
+	public static final String FIELD_TYPE = "type";
+
+	public long recording_id;
+	public long time_start;
+	public long time_end;
+	public String type;
+
+	public RecordingMarker(DBAdapter d) {
+		super(d);
+	}
+
+	@Override
+	public String getTableName() {
+		return TABLE_NAME;
+	}
+
+	@Override
+	public boolean load(Cursor c) {
+		super.load(c);
+		this.recording_id = c.getLong(c.getColumnIndex(FIELD_RECORDING_ID));
+		this.time_start = c.getLong(c.getColumnIndex(FIELD_TIME_START));
+		this.time_end = c.getLong(c.getColumnIndex(FIELD_TIME_END));
+		this.type = c.getString(c.getColumnIndex(FIELD_TYPE));
+		return true;
+	}
+
+	@Override
+	public long insert() {
+		ContentValues cv = new ContentValues();
+		cv.put(quote(FIELD_RECORDING_ID), this.recording_id);
+		cv.put(quote(FIELD_TIME_START), this.time_start);
+		cv.put(quote(FIELD_TIME_END), this.time_end);
+		cv.put(quote(FIELD_TYPE), this.type);
+		return this.dbAdapter.getDatabase().insert(quote(getTableName()), null, cv);
+	}
+
+	@Override
+	public boolean update() {
+		ContentValues cv = new ContentValues();
+		cv.put(quote(FIELD_RECORDING_ID), this.recording_id);
+		cv.put(quote(FIELD_TIME_START), this.time_start);
+		cv.put(quote(FIELD_TIME_END), this.time_end);
+		cv.put(quote(FIELD_TYPE), this.type);
+		return this.dbAdapter.getDatabase().update(
+				quote(getTableName()),
+				cv,
+				quote(FIELD_ID) +"=?",
+				new String[] {
+					this._id+"",
+				}) > 0;
+	}
+
+	@Override
+	public void onCreate() {
+		this.dbAdapter.getDatabase().execSQL("CREATE TABLE IF NOT EXISTS "+ quote(getTableName()) +" (" +
+				quote(FIELD_ID) +" INTEGER PRIMARY KEY AUTOINCREMENT," +
+				quote(FIELD_RECORDING_ID) +" INTEGER," +
+				quote(FIELD_TIME_START) +" INTEGER," +
+				quote(FIELD_TIME_END) +" INTEGER," +
+				quote(FIELD_TYPE) +" TEXT" +
+			")");
+	}
+
+	@Override
+	public void onUpgrade(int oldVersion, int newVersion) {
+
+	}
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/org.t2health.pe"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+			
+			<TextView
+		    	android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/review_homework"
+		        style="@style/headerText" />
+			
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/review_pe_therapy"
+				android:enabled="false" />
+				
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/review_common"
+				android:enabled="false" />
+				
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/review_invivo" />
+				
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/review_vivo_homework" />
+				
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/review_breathing"
+				android:enabled="false" />
+				
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/review_session"
+				android:enabled="false" />
+				
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/review_previe" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_weight="0.25"
+		android:orientation="vertical"
+		android:gravity="center">
+	    <ImageView
+	        android:id="@+id/micImage"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/microphone"/>
+    </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_weight="0.75"
+		android:orientation="vertical"
+		android:gravity="center">
+		<include
+			layout="@layout/record_media_controls"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<LinearLayout
+			android:id="@+id/imaginal_exposure_button_wrappper"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/mark_imaginal_exposure" />
+		    <ToggleButton
+		    	android:id="@+id/markimgexp"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:contentDescription="@string/mark_imaginal_exposure" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
+

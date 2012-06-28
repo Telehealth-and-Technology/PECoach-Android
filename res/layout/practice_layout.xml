@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView
+		android:id="@+id/text_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/breath_retrainer_practice"
+		style="@style/headerText" />
+
+	<TextView
+		android:id="@+id/inhale_exhale"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="25dip"
+		android:layout_marginLeft="125dip"
+		android:textColor="#000000"
+		android:textStyle="bold"
+		android:textSize="15sp"
+		android:text="Inhale" />
+
+
+	<FrameLayout 
+		android:id="@+id/framePractice"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0">
+
+		<ImageView
+			android:id="@+id/ball"
+			android:layout_alignParentTop="true"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="95dip"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/inhale_exhale"
+			android:layout_height="wrap_content"
+			android:src="@drawable/glass_green"
+			android:scaleType="fitXY" />
+
+		<TextView
+			android:id="@+id/numbers"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="90dip"
+			android:layout_below="@id/inhale_exhale"
+			android:layout_gravity="center_horizontal"
+			android:textColor="#000000"
+			android:textStyle="bold"
+			android:textSize="65sp"
+			android:text="1" />
+
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/minusPace"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left"
+			android:text="@string/pace_slower" />
+	
+		<Button
+			android:id="@+id/plusPace"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:text="@string/pace_faster" />
+	</FrameLayout>
+
+</LinearLayout>

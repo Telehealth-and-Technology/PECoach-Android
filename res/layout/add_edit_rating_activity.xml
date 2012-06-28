@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/activityTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/headerText" />
+
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:stretchColumns="*">
+
+			<TableRow android:id="@+id/preRow">
+				<TextView
+					android:id="@+id/preLabel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/pre" />
+				<EditText
+					android:id="@+id/pre"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:inputType="number|textVisiblePassword"
+					android:enabled="false"
+					android:selectAllOnFocus="true"
+					android:maxLength="3"
+					android:gravity="right"
+					android:contentDescription="@string/pre_desc" />
+				<TextView
+					android:id="@+id/preTime"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="right" />
+			</TableRow>
+
+			<TableRow android:id="@+id/postRow">
+				<TextView
+					android:id="@+id/postLabel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/post" />
+				<EditText
+					android:id="@+id/post"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:inputType="number|textVisiblePassword"
+					android:enabled="false"
+					android:selectAllOnFocus="true"
+					android:maxLength="3"
+					android:gravity="right"
+					android:contentDescription="@string/post_desc" />
+				<TextView
+					android:id="@+id/postTime"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="right" />
+			</TableRow>
+
+			<TableRow android:id="@+id/peakRow">
+				<TextView
+					android:id="@+id/peakLabel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/peak" />
+				<EditText
+					android:id="@+id/peak"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:inputType="number|textVisiblePassword"
+					android:enabled="false"
+					android:selectAllOnFocus="true"
+					android:maxLength="3"
+					android:gravity="right"
+					android:contentDescription="@string/peak_desc" />
+				<TextView
+					android:id="@+id/peakTime"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="right" />
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+</ScrollView>

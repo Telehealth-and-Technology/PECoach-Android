@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="10dip"
+	android:gravity="center">
+	<Button
+		android:id="@+id/recordButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/record" />
+
+	<Button
+		android:id="@+id/pauseButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/pause"
+		android:enabled="false" />
+
+	<Chronometer
+		android:id="@+id/timer"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/edit_text"
+		android:textSize="26sp" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_vertical">
+
+	<EditText
+		android:id="@+id/text1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0"
+		android:nextFocusRight="@id/text2"
+		android:nextFocusDown="@id/text2"
+		android:inputType="textVisiblePassword" />
+
+	<EditText
+		android:id="@+id/text2"
+		android:layout_width="50dip"
+		android:layout_height="wrap_content"
+		android:inputType="number|textVisiblePassword"
+		android:imeOptions="actionDone"
+		android:selectAllOnFocus="true"
+		android:gravity="right" />
+
+</LinearLayout>

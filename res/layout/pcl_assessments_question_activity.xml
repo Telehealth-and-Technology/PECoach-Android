@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/activityTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/question_n_of_m"
+		style="@style/headerText" />
+
+	<TextView
+		android:id="@+id/text1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:focusable="true"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip" />
+
+	<ListView
+		android:id="@+id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0"
+		android:background="#00FFFFFF"
+		android:cacheColorHint="#00FFFFFF"
+		android:scrollingCache="false"
+		android:choiceMode="singleChoice" />
+</LinearLayout>

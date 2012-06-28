@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="5dip">
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@android:style/TextAppearance.Medium"
+		android:text="@string/enter_your_pin" />
+	<EditText
+		android:id="@+id/pin"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:imeOptions="actionGo"
+		android:inputType="number" />
+
+	<Button
+		android:id="@+id/forgotPinButton"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/forgot_pin" />
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="2dip"
+		style="@style/divider" />
+
+</LinearLayout>

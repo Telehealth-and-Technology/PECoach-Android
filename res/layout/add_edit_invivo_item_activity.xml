@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="5dip">
+	
+	<TextView
+		android:id="@+id/activityTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/add_edit_invivo_item_activity_title"
+		style="@style/headerText" />
+	
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@android:style/TextAppearance.Medium"
+		android:text="@string/title" />
+	<EditText
+		android:id="@+id/text1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@android:style/TextAppearance.Medium"
+		android:contentDescription="@string/title"
+		android:imeOptions="actionNext" />
+	
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="10dip"
+		android:textAppearance="@android:style/TextAppearance.Medium"
+		android:text="@string/suds_rating" />
+	<EditText
+		android:id="@+id/text2"
+		android:layout_width="50dip"
+		android:layout_height="wrap_content"
+		android:textAppearance="@android:style/TextAppearance.Medium"
+		android:inputType="number|textVisiblePassword"
+		android:maxLength="3"
+		android:selectAllOnFocus="true"
+		android:gravity="right"
+		android:contentDescription="@string/suds_rating"
+		android:imeOptions="actionDone" />
+</LinearLayout>

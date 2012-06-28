@@ -1,0 +1,104 @@
+package org.t2health.pe.tables;
+
+import org.t2health.pe.db.DBAdapter;
+import org.t2health.pe.db.Table;
+
+import android.content.ContentValues;
+import android.database.Cursor;
+
+public class Rating extends Table {
+	public static final String TABLE_NAME = "rating";
+	public static final String FIELD_PRE_VALUE = "pre_value";
+	public static final String FIELD_POST_VALUE = "post_value";
+	public static final String FIELD_PEAK_VALUE = "peak_value";
+	public static final String FIELD_PRE_TIMESTAMP = "pre_timestamp";
+	public static final String FIELD_POST_TIMESTAMP = "post_timestamp";
+	public static final String FIELD_PEAK_TIMESTAMP = "peak_timestamp";
+	public static final String FIELD_TIMESTAMP = "timestamp";
+
+	public static final int GROUP_SESSION_ID = 0;
+	
+	public int preValue = -1;
+	public int postValue = -1;
+	public int peakValue = -1;
+	
+	public long preTimestamp = -1;
+	public long postTimestamp = -1;
+	public long peakTimestamp = -1;
+	
+	public long timestamp;
+
+	public Rating(DBAdapter d) {
+		super(d);
+	}
+
+	@Override
+	public String getTableName() {
+		return TABLE_NAME;
+	}
+
+	@Override
+	public boolean load(Cursor c) {
+		super.load(c);
+		this.preValue = c.getInt(c.getColumnIndex(FIELD_PRE_VALUE));
+		this.postValue = c.getInt(c.getColumnIndex(FIELD_POST_VALUE));
+		this.peakValue = c.getInt(c.getColumnIndex(FIELD_PEAK_VALUE));
+		this.preTimestamp = c.getLong(c.getColumnIndex(FIELD_PRE_TIMESTAMP));
+		this.postTimestamp = c.getLong(c.getColumnIndex(FIELD_POST_TIMESTAMP));
+		this.peakTimestamp = c.getLong(c.getColumnIndex(FIELD_PEAK_TIMESTAMP));
+		this.timestamp = c.getLong(c.getColumnIndex(FIELD_TIMESTAMP));
+		return true;
+	}
+
+	@Override
+	public long insert() {
+		ContentValues cv = new ContentValues();
+		cv.put(quote(FIELD_PRE_VALUE), this.preValue);
+		cv.put(quote(FIELD_POST_VALUE), this.postValue);
+		cv.put(quote(FIELD_PEAK_VALUE), this.peakValue);
+		cv.put(quote(FIELD_PRE_TIMESTAMP), this.preTimestamp);
+		cv.put(quote(FIELD_POST_TIMESTAMP), this.postTimestamp);
+		cv.put(quote(FIELD_PEAK_TIMESTAMP), this.peakTimestamp);
+		cv.put(quote(FIELD_TIMESTAMP), this.timestamp);
+		return this.dbAdapter.getDatabase().insert(quote(getTableName()), null, cv);
+	}
+
+	@Override
+	public boolean update() {
+		ContentValues cv = new ContentValues();
+		cv.put(quote(FIELD_PRE_VALUE), this.preValue);
+		cv.put(quote(FIELD_POST_VALUE), this.postValue);
+		cv.put(quote(FIELD_PEAK_VALUE), this.peakValue);
+		cv.put(quote(FIELD_PRE_TIMESTAMP), this.preTimestamp);
+		cv.put(quote(FIELD_POST_TIMESTAMP), this.postTimestamp);
+		cv.put(quote(FIELD_PEAK_TIMESTAMP), this.peakTimestamp);
+		cv.put(quote(FIELD_TIMESTAMP), this.timestamp);
+		return this.dbAdapter.getDatabase().update(
+				quote(getTableName()),
+				cv,
+				quote(FIELD_ID) +"=?",
+				new String[] {
+					this._id+"",
+				}) > 0;
+	}
+
+	@Override
+	public void onCreate() {
+		this.dbAdapter.getDatabase().execSQL("CREATE TABLE IF NOT EXISTS "+ quote(getTableName()) +" (" +
+				quote(FIELD_ID) +" INTEGER PRIMARY KEY AUTOINCREMENT," +
+				quote(FIELD_PRE_VALUE) +" INTEGER," +
+				quote(FIELD_POST_VALUE) +" INTEGER," +
+				quote(FIELD_PEAK_VALUE) +" INTEGER," +
+				quote(FIELD_PRE_TIMESTAMP) +" INTEGER," +
+				quote(FIELD_POST_TIMESTAMP) +" INTEGER," +
+				quote(FIELD_PEAK_TIMESTAMP) +" INTEGER," +
+				quote(FIELD_TIMESTAMP) +" INTEGER" +
+			")");
+	}
+
+	@Override
+	public void onUpgrade(int oldVersion, int newVersion) {
+
+	}
+
+}

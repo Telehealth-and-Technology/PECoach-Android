@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="preferExternal"
+    package="org.t2health.pe"
+    android:versionCode="6"
+    android:versionName="1.3" >
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        
+        <service android:name="RecordService" />
+
+        <activity
+            android:name=".activity.StartupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyThemeDark" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/add_edit_invivo_activity_title"
+            android:name=".activity.AddEditInVivoAcitivty"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/add_edit_invivo_item_activity_title"
+            android:name=".activity.AddEditInvivoItemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/calendar_event_title"
+            android:name=".activity.AddCalendarEventActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/add_edit_rating_activity_title"
+            android:name=".activity.AddEditRatingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/breathing_menu_activity_title"
+            android:name=".activity.BreathingMenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/breathing_practice_activity_title"
+            android:name=".activity.BreathingPracticeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/suds_anchors_activity_title"
+            android:name=".activity.EditSUDSAnchorsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/suds_anchors_activity_title"
+            android:name=".activity.SUDSAnchorsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/choose_invivo_scenarios_activity_title"
+            android:name=".activity.ChooseInVivoScenariosActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/common_reactions_to_trauma_activity_title"
+            android:name=".activity.CommonReactionsToTraumaActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/compare_invivo_ratings_activity_title"
+            android:name=".activity.CompareInvivoRatingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/complete_activity_title"
+            android:name=".activity.CompleteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/contact_manager_activity_title"
+            android:name=".activity.ContactManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/explination_of_pe_theory_activity_title"
+            android:name=".activity.ExplinationOfPETheoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/eula_title"
+            android:name=".activity.EulaActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/final_session_activity_title"
+            android:name=".activity.FinalSessionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/forgot_pin_activity_title"
+            android:name=".activity.ForgotPinActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/group_list_activity_title"
+            android:name=".activity.GroupListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/homework_activity_title"
+            android:name=".activity.HomeworkActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/login_activity_title"
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/invivo_exposure_selector_activity_title"
+            android:name=".activity.InvivoExposureSelectorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/invivo_exposure_assignment_activity_title"
+            android:name=".activity.InvovoExposureAssignmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/main_preference_activity_title"
+            android:name=".activity.MainPreferenceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/pcl_assessment_question_activity_title"
+            android:name=".activity.PCLAssessmentQuestionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/pcl_assessments_activity_title"
+            android:name=".activity.PCLAssessmentsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/pcl_reports_activity_title"
+            android:name=".activity.PCLReportsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/play_imaginal_exposure_activity_title"
+            android:name=".activity.PlayImaginalExposureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/play_recording_activity_title"
+            android:name=".activity.PlayRecordingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/play_session_recording_activity_title"
+            android:name=".activity.PlaySessionRecordingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/rate_invivo_activity_title"
+            android:name=".activity.RateInvivo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/rate_invivo_activity_title"
+            android:name=".activity.ReRateInvivo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/rating_list_activity_title"
+            android:name=".activity.RatingListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/record_session_activity_title"
+            android:name=".activity.RecordSessionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/review_homework_activity_title"
+            android:name=".activity.ReviewHomeworkActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/security_activity_title"
+            android:name=".activity.SecurityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/session_activity_title"
+            android:name=".activity.SessionActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/splash_activity_title"
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyThemeDark" >
+        </activity>
+        <activity
+            android:label="@string/text_video_tab_activity_title"
+            android:name=".activity.TextVideoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/unlock_activity_title"
+            android:name=".activity.UnlockActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.VideoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.VideoListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/webview_activity_title"
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-configuration
+        android:reqFiveWayNav="true"
+        android:reqKeyboardType="qwerty" />
+    <uses-configuration
+        android:reqFiveWayNav="true"
+        android:reqKeyboardType="twelvekey" />
+    <uses-configuration android:reqTouchScreen="finger" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+</manifest>

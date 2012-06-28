@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/org.t2health.pe"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<view
+				class="org.t2health.pe.view.StarButton"
+				android:id="@+id/starButton"
+				android:layout_width="32dip"
+				android:layout_height="32dip"
+				android:layout_gravity="right|center_vertical" />
+				
+			<TextView
+		    	android:id="@+id/label"
+		    	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/session_activity_title"
+		        style="@style/headerText" />
+		</FrameLayout>
+
+		<LinearLayout
+			android:id="@+id/buttonWrapper"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<Button
+		    	android:id="@+id/sessionrecord"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/record_session"
+		    	android:drawableLeft="@drawable/record_icon"
+		    	android:visibility="gone" />
+	
+		    <Button
+		    	android:id="@+id/pcl"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/pcl_assessments"
+		    	android:visibility="gone" />
+	
+		     <Button
+		    	android:id="@+id/review_homework"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/review_homework_from_previous"
+		    	android:visibility="gone" />
+	
+		    <Button
+		    	android:id="@+id/vivo_suds"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/create_invivo_and_suds"
+		    	android:visibility="gone" />
+	
+		    <Button
+		    	android:id="@+id/vivo_homework"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/choose_homework_scenarios"
+		    	android:visibility="gone" />
+	
+		    <Button
+		    	android:id="@+id/apmtrem"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/appointments_and_reminders"
+		    	android:drawableLeft="@drawable/note_icon"
+		    	android:visibility="gone" />
+    	</LinearLayout>
+   	</LinearLayout>
+</ScrollView>

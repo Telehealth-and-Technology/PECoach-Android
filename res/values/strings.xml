@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="anchors_desc">To make the SUDS scale fit you, your therapist will ask you what situations represent different levels on the scale.</string>
+    <string name="anchors_saved">Your anchors for these different SUDS levels are saved and available in the Toolbox section.</string>
+    <string name="clinicians_guide_url">http://docs.google.com/viewer?url=http://t2health.org/sites/default/files/mobile_apps/pe-coach/PE-Coach_Clinical-Guidelines_Android_02.pdf</string>
+    <string name="incoming_call_warning">Recording will be automatically stopped during phone calls. You will have to return to this screen to restart the recording after taking a call.</string>
+    <string name="navigation_next">Next Session</string>
+    <string name="goto_session">Go to Session...</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause/Stop</string>
+    <string name="edit">Edit</string>
+    <string name="next">Next</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="record">Record</string>
+    <string name="finish">Finish</string>
+    <string name="loading">Loading...</string>
+    <string name="add">Add</string>
+    <string name="ok">Okay</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="title">Title</string>
+    <string name="split_two">Split Session 2</string>
+    <string name="split_two_desc">Divide Session two into 60 minute halves.</string>
+    <string name="video_button_text">Watch Video</string>
+    <string name="text_button_text">Read Text</string>
+    <string name="could_not_play_video">Could not play video.</string>
+    <string name="no_conenction_message">You must have an active internet connection to play this resource.</string>
+    <string name="session_still_recording">Alert! The session is still being recorded.</string>
+    <string name="complete">Complete</string>
+    <string name="pre">Pre</string>
+    <string name="post">Post</string>
+    <string name="peak">Peak</string>
+    <string name="suds">SUDS</string>
+    <string name="suds_rating">SUDS Rating</string>
+    <string name="pre_desc">Pre Rating</string>
+    <string name="post_desc">Post Rating</string>
+    <string name="peak_desc">Peak Raing</string>
+    <string name="date_and_time">Date &amp; Time</string>
+    <string name="save_and_view_event">Save and View Event</string>
+    <string name="security">Password Protect App</string>
+    <string name="send_anon_data">Send Anonymous Usage Data</string>
+    <string name="send_anon_data_desc">Allow developers to determine how this App is being used.</string>
+    <string name="goto_next_session">Next Session</string>
+    <string name="goto_session_homework">Session Homework</string>
+    <string name="confirm_app_exit">Are you sure you want to exit?</string>
+    <string name="add_edit_invivo_activity_title">Add/Edit In Vivo Hierarchy and SUDS Ratings</string>
+    <string name="add_edit_invivo_item_activity_title">Add/Edit In Vivo SUDS Item</string>
+    <string name="add_edit_rating_activity_title">Add/Edit SUDS Rating</string>
+    <string name="breathing_menu_activity_title"></string>
+    <string name="breathing_practice_activity_title"></string>
+    <string name="choose_invivo_scenarios_activity_title"></string>
+    <string name="common_reactions_to_trauma_activity_title">Common Reactions To Trauma</string>
+    <string name="compare_invivo_ratings_activity_title">Compare SUDS</string>
+    <string name="complete_activity_title"></string>
+    <string name="contact_manager_activity_title"></string>
+    <string name="explination_of_pe_theory_activity_title">Explanation of PE Therapy</string>
+    <string name="final_session_activity_title"></string>
+    <string name="forgot_pin_activity_title"></string>
+    <string name="group_list_activity_title"></string>
+    <string name="homework_activity_title">Session {0} Homework</string>
+    <string name="login_activity_title"></string>
+    <string name="invivo_exposure_selector_activity_title">Select In Vivo Item</string>
+    <string name="invivo_exposure_assignment_activity_title">In Vivo Exposure Assignment</string>
+    <string name="main_preference_activity_title"></string>
+    <string name="pcl_assessment_question_activity_title">PCL Assessment Question</string>
+    <string name="pcl_assessments_activity_title">PCL Assessment</string>
+    <string name="pcl_reports_activity_title">Compare all PCLs</string>
+    <string name="play_imaginal_exposure_activity_title"></string>
+    <string name="play_recording_activity_title"></string>
+    <string name="play_session_recording_activity_title"></string>
+    <string name="rate_invivo_activity_title"></string>
+    <string name="rating_list_activity_title"></string>
+    <string name="record_session_activity_title">Record Session</string>
+    <string name="review_homework_activity_title"></string>
+    <string name="security_activity_title"></string>
+    <string name="session_activity_title">Session {0} Activities</string>
+    <string name="splash_activity_title">Starting PE Coach</string>
+    <string name="text_video_tab_activity_title"></string>
+    <string name="toolbox_activity_title">Toolbox</string>
+    <string name="unlock_activity_title"></string>
+    <string name="webview_activity_title"></string>
+    <string name="pre_suds_rating_desc">Pre SUDS rating</string>
+    <string name="post_suds_rating_desc">Post SUDS rating</string>
+    <string name="enter_final_suds_rating">Enter Final SUDS Rating</string>
+    <string name="new_suds_rating">New SUDS rating</string>
+    <string name="item_saved">Item Saved</string>
+    <string name="accessibility_toast_prefix">Toast Dialog: </string>
+    <string name="select_for_more_details">Select item for more details.</string>
+    <string name="add_edit_invivo_activity_instructions">Choose an item in the list below to edit. You may add a new In Vivo item by clicking the "add" button.</string>
+    <string name="add_edit_invivo_empty_list">You first need to add to your Invivo hierarchy.</string>
+    <string name="pace_slower">Slow Down</string>
+    <string name="pace_faster">Speed Up</string>
+    <string name="manage_application">Manage Application</string>
+    <string name="fill_out_all_security_fields">Fill out all the fields.</string>
+    <string name="homework_continue_disabled_message">You must use a homework item before you can continue.</string>
+    <string name="session_continue_disabled_message">You must use a session item before you can continue.</string>
+    <string name="security_title">Security</string>
+    <string name="security_desc">Force the use of a password when loading the app.</string>
+    <string name="security_enabled">Security Enabled</string>
+    <string name="security_pin">Pin</string>
+    <string name="question1">Question 1</string>
+    <string name="question2">Question 2</string>
+    <string name="answer1">Answer 1</string>
+    <string name="answer2">Answer 2</string>
+    <string name="forgot_pin">Forgot Pin</string>
+    <string name="enter_your_pin">Enter your pin</string>
+    <string name="cannot_record_sdcard_not_ready">You will be unable to record this session because your SD card is not ready.</string>
+    <string name="cannot_play_sdcard_not_ready">You will be unable to play this session because your SD card is not ready.</string>
+    <string name="calendar_event_title">PE Appointment</string>
+    <string name="rating_range_error">All ratings need to be between 0-100.</string>
+    <string name="imaginal_exposure_suds">Enter Imaginal Exposure Ratings</string>
+    <string name="currently_select_contact">Currently selected contact:</string>
+    <string name="no_contact_associated">No contact is currently associated</string>
+    <string name="view_contact">View Contact</string>
+    <string name="contacts_use_buttons_instructions">Use the buttons below to associate a contact with your Therapy.</string>
+    <string name="choose_contact">Choose Contact</string>
+    <string name="add_new_contact">Add New Contact</string>
+
+    <string-array name="pcl_questions">
+        <item>Repeated, disturbing memories, thoughts, or images of a stressful military experience?</item>
+        <item>Repeated, disturbing dreams of a stressful military experience?</item>
+        <item>Suddenly acting or feeling as if a stressful military experience were happening again (as if you were reliving it)?</item>
+        <item>Feeling very upset when something reminded you of a stressful military experience?</item>
+        <item>Having physical reactions (e.g. heart pounding, trouble breathing, sweating) when something reminded you of a stressful military experience?</item>
+        <item>Avoiding thinking about or talking about a stressful military experience or avoiding having feelings related to it?</item>
+        <item>Avoiding activities or situations because they reminded you of a stressful military experience?</item>
+        <item>Trouble remembering important parts of a stressful military experience?</item>
+        <item>Loss of interest in activities that you used to enjoy?</item>
+        <item>Feeling distant or cut off from other people?</item>
+        <item>Feeling emotionally numb or being unable to have loving feelings for those close to you?</item>
+        <item>Feeling as if your future will somehow be cut short?</item>
+        <item>Trouble falling or staying asleep?</item>
+        <item>Feeling irritable or having angry outbursts?</item>
+        <item>Having difficulty concentrating?</item>
+        <item>Being super alert or watchful or on guard?</item>
+        <item>Feeling jumpy or easily startled?</item>
+    </string-array>
+    <string-array name="pcl_answers">
+        <item>1 - Not at all</item>
+        <item>2 - A little bit</item>
+        <item>3 - Moderately</item>
+        <item>4 - Quite a bit</item>
+        <item>5 - Extremely</item>
+    </string-array>
+
+    <string name="pcl_instruction_alert">Following is a list of problems and complaints that people sometimes have in response to stressful life experiences.  Please read each one carefully, then select the response that best indicates how much you have been bothered by that problem IN THE PAST MONTH.</string>
+    <string name="confirm_pcl_exit_message">Choosing back will exit this assessment and all questions you answered will be lost. Are you sure you would like to do this?</string>
+    <string name="question_n_of_m">PCL Question {0} of {1}.</string>
+    <string name="pcl_total_score">Total Score:</string>
+    <string name="pcl_results_title">PCL Assessment Results</string>
+    <string name="pcl_complete">You have successfully completed the PCL Assessments.</string>
+    <string name="pcl_report_complete">Below are the results of your completed PCL Assessments.</string>
+    <string name="record_starting_message">Preparing</string>
+    <string name="mark_imaginal_exposure">Mark Imaginal Exposure</string>
+    <string name="mark_imaginal_exposure_on">End Imaginal Exposure Portion</string>
+    <string name="mark_imaginal_exposure_off">Begin Imaginal Exposure Portion</string>
+    <string name="recording_title">Recording Session</string>
+    <string name="recording_desc">Touch to stop recording.</string>
+    <string name="listen_to_recording">Listen to Entire Session Recording</string>
+    <string name="pcl_assessments">PCL Assessment</string>
+    <string name="record_session">Record Session</string>
+    <string name="appointments_and_reminders">Schedule Next Appointment</string>
+    <string name="suds_anchors">Add Anchors for SUDS</string>
+    <string name="choose_homework_scenarios">Choose current In Vivo Homework Items</string>
+    <string name="create_invivo_and_suds">Create In Vivo Hierarchy and SUDS Ratings</string>
+    <string name="review_homework_from_previous">Review Homework from Previous Session</string>
+    <string name="review_homework_from_previous_n">Review Homework from Session {0}</string>
+    <string name="rerate_suds">Re-rate SUDS for In Vivo Hierarchy</string>
+    <string name="compare_suds">Compare Suds</string>
+    <string name="text_tab">Text</string>
+    <string name="video_tab">Video</string>
+    <string name="confim_cancel_pcl_assessments">Quitting now will result in none of your answers being save. Are you sure you would like to do this?</string>
+    <string name="pe_coach">PE Coach</string>
+    <string name="pet">Prolonged Exposure Therapy</string>
+    <string name="hello">Hello Android, Test!</string>
+    <string name="app_name">PE Coach</string>
+    <string name="welcome">Welcome</string>
+    <string name="splash_text">	    Welcome to the Prolonged Exposure (PE) mobile application (app).\n\n
+
+		This app is designed to be used during treatment with a PE trained behavioral health professional. By
+		itself this mobile app is not sufficient to treat posttraumatic stress disorder (PTSD).\n\n
+
+		You will use the convenient tools in this app during and after each PE treatment session. The app will
+		guide you through the homework that the therapist assigns to you and allow you to track and record
+		your work and progress in treatment.\n\n
+
+		The appointments and reminders feature will help you track your upcoming therapy sessions. Your
+		therapist will audio record each of your sessions and the recountings of your traumatic memory for you
+		to review later. This app allows you to record your sessions directly onto your phone.\n\n
+
+		Content used by permission of <b><a href="com.pe.externalLink://www.oup.com/us/companion.websites/0195308506/?view=usa">Oxford University Press.</a>
+</b></string>
+    <string name="about_title"></string>
+    <string name="about_content">        <![CDATA[
+	<p>Welcome to the Prolonged Exposure (PE) mobile application (app).</p>
+	<p>This app is designed to be used during treatment with a PE trained behavioral health professional.
+	By itself this mobile app is not sufficient to treat posttraumatic stress disorder (PTSD).</p>
+	<p>You will use the convenient tools in this app during and after each PE treatment session. The app will
+	guide you through the homework that the therapist assigns to you and allow you to track and record
+	your work and progress in treatment.</p>
+
+	<p>The appointments and reminders feature will help you track your upcoming therapy sessions. Your
+	therapist will audio record each of your sessions and the recountings of your traumatic memory for you
+	to review later. This app allows you to record your sessions directly onto your phone.</p>
+
+	<p>Content used by permission of <a href="http://www.oup.com/us/companion.websites/0195308506/?view=usa" target="_blank">Oxford University Press.</a></p>
+	]]>
+    </string>
+    <string name="oxford"><b><a href="com.pe.externalLink://www.oup.com/us/companion.websites/0195308506/?view=usa">Oxford University Press</a>
+</b></string>
+    <string name="blue">#003EFF</string>
+    <string name="cont">Continue</string>
+    <string name="in_session_act">In-Session Activities</string>
+    <string name="session1">\nSession #1\n\n</string>
+    <string name="link_sessionrecord">Record Session</string>
+    <string name="link_apmtrem">Appointments and Reminders</string>
+    <string name="link_pcl">PCL Assessments</string>
+    <string name="continue_homework">Continue to Homework..</string>
+    <string name="external_link">The appearance of external hyperlinks does not constitute endorsement by the United States Department of Defense of the linked websites, or the information, products or services contained therein. The United States Department of Defense does not exercise any editorial control over the information you may find at these locations. All links are provided consistent with the stated purpose of these DoD websites.</string>
+    <string name="view_video">View Video</string>
+    <string name="click_start">Click to start</string>
+
+    <string-array name="sessionmenu_array">
+        <item>Record Session Bar</item>
+        <item>Set Appointments and Reminders</item>
+        <item>PCL Assessments</item>
+    </string-array>
+
+    <string name="seekbar_from_touch">On touch</string>
+    <string name="seekbar_tracking_on">On</string>
+    <string name="seekbar_tracking_off">Off</string>
+
+    <!-- In VIVO -->
+    <string name="vivo_items_heading">In Vivo Items</string>
+    <string name="vivo_final_suds_heading">Final SUDS</string>
+    <string name="vivo_suds_heading">SUDS</string>
+    <string name="vivo_suds">Create In Vivo Hierarchy and SUDS Ratings</string>
+    <string name="vivo_homework">Choose current In Vivo Homework Scenarios</string>
+    <string name="review_homework">Review Homework from Previous Session</string>
+    <string name="vivo_suds_error">All SUDs ratings must be a number between 0 and 100</string>
+
+    <!-- Review Homework -->
+    <string name="review_pe_therapy">Listen to Explanation of PE Therapy?</string>
+    <string name="review_common">Listen to Common Reactions to Trauma?</string>
+    <string name="review_breathing">Practice Breathing Retrainer?</string>
+    <string name="review_session">Listen to Entire Session Recording?</string>
+
+    <!-- Toolbox menu -->
+    <string name="toolbox">Toolbox</string>
+    <string name="vivo_hier">In Vivo Hierarchy</string>
+    <string name="vivo_suds_ratings">In Vivo SUDS Ratings</string>
+    <string name="exp_pet">Explanation of PE Therapy</string>
+    <string name="reactions">Common Reactions to Trauma</string>
+    <string name="breath_retrain">Breathing Retrainer</string>
+    <string name="list_all">See List of All Sessions\n</string>
+    <string name="final_session">Final Session</string>
+    <string name="contact_info">Therapist Contact Information</string>
+    <string name="settings">Settings</string>
+
+    <string-array name="toolbox_items">
+        <item>In Vivo Hierarchy</item>
+        <item>PCL Assessment</item>
+        <item>SUDS Anchors</item>
+        <item>Explanation of PE Therapy</item>
+        <item>Common Reactions to Trauma</item>
+        <item>Breathing Retrainer</item>
+        <item>Clinicians Guide</item>
+        <item>Go to Final Session</item>
+        <item>Therapist Contact Information</item>
+        <item>About</item>
+        <item>Settings</item>
+        <item>EULA</item>
+    </string-array>
+    <string-array name="toolbox_values">
+        <item>vivo_hier</item>
+        <item>pcl_assessment</item>
+        <item>suds_anchors</item>
+        <item>exp_pet</item>
+        <item>reactions</item>
+        <item>breath_retrain</item>
+        <item>guide</item>
+        <item>final_session</item>
+        <item>contact_info</item>
+        <item>about</item>
+        <item>settings</item>
+        <item>eula</item>
+    </string-array>
+
+    <!-- Password configuration -->
+    <string name="password_label">Password:</string>
+    <string name="allow_password">Enforce Password: </string>
+    <string name="submit">Submit</string>
+    <string name="invalid_password_title">Invalid Password</string>
+    <string name="populate_password">Both Password fields must be populated.</string>
+    <string name="match_password">Passwords must match</string>
+
+    <!-- Contact Info (Therapist) configuration -->
+    <string name="first_name_label">First Name:</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name_label">Last Name:</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_label">Phone Number:</string>
+    <string name="phone">Phone Number</string>
+    <string name="address_label">Address:</string>
+    <string name="address_line_1">Street</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip Code</string>
+    <string name="add_to_contacts">Add to Contacts</string>
+
+    <!-- Breathing Retrainer -->
+    <string name="breath_retrainer_learn">Learn</string>
+    <string name="breath_retrainer_watch">Watch</string>
+    <string name="breath_retrainer_practice">Practice</string>
+    <string name="breathing_retrainer_learn_content">        <![CDATA[
+		<p>When people get upset, it\'s normal to breathe fast or even
+		hyperventilate because being upset makes people feel like they need
+		more air.</p>
+		
+		<p>The problem is that breathing fast doesn\'t actually have a
+		calming effect. In fact, it usually makes people feel more anxious.</p>
+		
+		<p>If you took short, quick breaths right now, you would probably feel your
+		heart rate going up and you might even start to feel anxious. This fast
+		breathing produces bodily reactions that are similar to those of fear
+		and anxiety. Therefore, breathing faster can make you more upset.</p>
+		
+		<p>Instead, when feeling upset or anxious it is better to actually breathe
+		slower because slow breathing can reduce feelings of stress or tension.</p>
+		
+		<p>Most people have some awareness of how breathing affects the way they
+		feel. For example, when you are upset, someone might tell you to calm
+		down and take a deep breath.  However, deep breathing does not actually
+		help calm a person down while slow breathing does. Therefore it is important
+		to pause between the exhale and the following inhale. To calm down or
+		relax, you need to take normal breaths and slow your exhale, pausing in
+		between. It\'s the exhale and pause that are important to relaxing, not inhaling.</p>
+	]]>
+    </string>
+    <string name="breathing_retrainer_watch_demo_content">        <![CDATA[
+		<p>What you are going to do now is just take a normal breath in through
+		your nose and then extend your exhale. Your inhale will be normal, it\'s
+		the exhale that you are going to slow down. With the exhale, some people
+		like to think the word "relax" in their head, or another calming word,
+		but for our practice now we are simply going to count out the exhale. When
+		you practice this later, you might want to think a calming word in your head
+		and extend the word for the length of the count. After the exhale, you
+		will pause for 3 to 4 counts before inhaling again.</p>
+		
+		<p>Let\'s practice this. First, take a normal breath in through your nose;
+		now exhale through your mouth, lengthen your exhale and count in your
+		head for.. 1. 2. 3. 4. Pause,  and count in your head
+		1. 2. 3. 4. Again, now inhale normally. Exhale and 1. 2. 3. 4.
+		Pause. 2. 3. 4. Inhale normally. exhale. 2. 3. 4. pause. 2. 3. 4.</p>
+		
+		<p>Under the "Practice" screen, you are going to see a visual that reminds you
+		of when to inhale and how long to exhale and pause. If this visual is
+		either too fast or slow for you, you can control that by moving the "speed up"
+		and "slow down" buttons at the bottom of the screen. It won\'t slow it down or speed
+		it up too much because we want you to get use to doing this within a
+		certain range. The practice will last for 10 Minutes; you should do this
+		3 times a day.</p>
+	]]>
+    </string>
+    <string name="breath_retrainer">Breathing Retrainer</string>
+    <string name="listen">Listen to Entire Session Recording</string>
+    <string name="vivo_exp_assignment">In Vivo Exposure Assignment</string>
+    <string name="vivo_exp_homework">In Vivo Exposure Homework</string>
+    <string name="vivo_exp_homework_text">\nPlease select an <b>In VIVO item</b> for <b>homework</b>:\n</string>
+    <string name="tactical_breathing">Tactical Breathing</string>
+    <string name="listen_session">Listen to Entire Session Recording</string>
+    <string name="listen_imaginal_exp">Listen to Imaginal Exposure</string>
+    <string name="in_vivo">In Vivo Hierarchy</string>
+    <string name="add_vivo_hier">Add to In Vivo Hierarchy</string>
+    <string name="add_hier_text">\nPlease select an <b>In VIVO item</b> for <b>assignment</b>:\n</string>
+    <string name="explination_of_pe_therapy_content">        <![CDATA[
+		<P><b>How does exposure work?</b>
+				<P>Immediately following a traumatic event, most people have reactions including nervousness and anxiety, 
+				sleep problems, and being upset by reminders of the event.  For some people, these symptoms naturally decrease over time.  
+				But for others, these symptoms continue to be a problem and they develop posttraumatic stress disorder.  
+				Two factors maintain the PTSD symptoms: avoidance and unhelpful thoughts and beliefs.
+            
+            	<P>There are two kinds of avoidance: avoiding thinking about the trauma and avoiding situations that remind the person of the trauma.  
+            	People avoid in order to reduce their anxiety and distress about the trauma.
+				
+				<P>The problem is that avoidance works in the short run to reduce distress and anxiety.  
+				But in the long run it actually make the problems worse because it interferes with recovery.  
+				Exposure works to help you recover by confronting the situations that distress you in a safe way.  
+				We want you to learn two important lessons from exposure: 1) your distress and anxiety will decrease if you stay with 
+				the thoughts or in the situation long enough and 2) the negative things you think will happen during exposure actually 
+				don\'t happen.
+				
+				<P>This treatment, Prolonged Exposure, uses two forms of exposure.  
+				The first is called imaginal exposure, and involves revisiting the traumatic memory and recounting it aloud.  
+				The second is called in vivo exposure, and involves confronting the objectively safe activities that you have been 
+				avoiding because of the trauma in a gradual manner, beginning with the easier ones and progressing towards more difficult ones.
+				
+				<P>Exposure works in several ways.  First, revisiting and recounting your traumatic memories in imagination help you 
+				emotionally work through the traumatic event and think about what happened and about your behavior differently.  
+				Second, exposure helps you learn that memories cannot actually harm you, and that feeling upset or anxious is not dangerous. 
+                Third, exposure helps you learn that you CAN handle feelings of anxiety and distress, causing you to gain confidence 
+                in your ability to handle stress.  Fourth, exposure helps you learn that the more you approach difficult but relatively
+                 safe activities, the more feelings of anxiety and distress are reduced.  In other words, the more you do it, the easier 
+                 it gets!  We call this habituation.
+				
+				<P>Habituation means that by approaching situations and objects that cause you to be upset again and again and by 
+				sticking it out these situations no longer make you upset. This is because you learn that nothing bad happens to 
+				you while being in these situations. No one is hurting you and you are able to cope with your emotions. It is similar 
+				to getting back on a bicycle after falling off.  If you refuse to try again, over time you become more and more frightened 
+				of riding bicycles.  But if you force yourself to ride them despite your fear, you become less afraid.
+				
+				<P>Habituation works with upsetting memories too.  Allowing yourself to think about the traumatic memories rather than 
+				avoiding them will help you to remember the trauma with less distress.  It will also allow you to gain control over 
+				those memories so that they are less likely to pop up at times you don\'t want them to.  The flashbacks, nightmares 
+				and intrusive thoughts that many trauma survivors often experience are less likely to occur after you repeatedly revisit 
+				the memory of the trauma.  And when they do occur, they are less upsetting. 
+				
+				<P>Treatment with imaginal and in vivo exposure may seem difficult at first.  But with time you will find that this 
+				treatment becomes easier and will make you feel better about yourself in many ways.
+		
+	]]>
+    </string>
+    <string name="continue_nextSession">Continue to Next Session...</string>
+
+    <!-- Common Reactions to Trauma -->
+    <string name="video_view_all">View All</string>
+    <string name="video_fear_and_anxiety">Fear and Anxiety</string>
+    <string name="video_reexperiencing_and_avoidance">Re-Experiencing and Avoiding</string>
+    <string name="video_increased_arousal">Increased Arousal</string>
+    <string name="video_irritability_and_anger">Irritability and Anger</string>
+    <string name="video_guilt_and_depression">Guilt and Shame</string>
+    <string name="video_trust_and_intimacy">Trust and Intimacy</string>
+    <string name="video_alcohol_and_drugs">Alcohol and Drugs</string>
+    <string name="video_conclusion">Summary</string>
+    <string name="common_reactions_content">        <![CDATA[
+		People differ in how they react to a traumatic experience but certain reactions are common. Remember that after a trauma, 
+		it is natural to feel upset and stressful. But it\'s when the stress symptoms don\'t fade over time and when they interfere 
+		with everyday life that the person has Posttraumatic Stress Disorder (PTSD). Immediately following a trauma, it\'s very normal 
+		to have severe reactions. Many people start to feel better within weeks or up to three months and others recover more slowly. 
+		But some don\'t recover without help. It is generally helpful to everyone, no matter what the recovery length, to become more 
+		aware of the changes that can happen after a trauma in order to recover. 
+		
+		<P>The primary symptoms of PTSD are fear and anxiety. During a traumatic event, fear and anxiety are normal. But it is when this 
+		fear and anxiety don\'t go away, or come back, that problems start. When anxiety lasts long after the trauma it can change your 
+		view of the world, your sense of being safe, or even your feelings of being able to control your life. Things that remind you 
+		of the trauma can trigger anxiety and the feeling of danger, like certain places, times of day, certain smells, or any situation 
+		that reminds you of the trauma. Sometimes these feelings come out of the blue without any trigger. Life itself can start to 
+		feel dangerous; things that normally won\'t have bothered you before the trauma can stop you in your tracks and even immobilize you. 
+		Triggers or cues can cause anxiety, like certain places, times of day, certain smells or noises, or any situation that reminds 
+		you of the trauma. 
+		
+		<P>One way to think about PTSD is that this past event is haunting the person now. The haunting nature of PTSD comes out in the 
+		re-experiencing symptoms. You often don\'t want to think about the trauma but it can keep coming to mind anyway. Re- experiencing 
+		the trauma can happen through very vivid images that are called flashbacks, nightmares, or unwanted thoughts. These unwanted images 
+		or thoughts are your body\'s way of trying to digest what happened, since it was so shocking. And because you try not to think about 
+		these things, they will keep coming back. This is your brain\'s way of telling you that you need to stop avoiding the thoughts so you 
+		can "think through" and organize this experience in order to feel better. 
+            
+            <P>Avoiding these thoughts is a very common way to try and manage trauma-related pain. The most common form of avoidance is trying 
+            to avoid situations that remind you of the trauma. Even situations that are less directly related to the trauma might also be 
+            avoided. For example, if the trauma happened at in a crowded market you might avoid public places. It\'s also possible that some 
+            thoughts are so intense that you might want to just block them out altogether and you may not remember parts of the trauma. 
+            Another way to avoid thoughts of the trauma is by pushing away, not only thoughts, but also painful feelings: emotionally 
+            checking out. This can leave you feeling emotionally numb and not able to experience even positive emotions.  This is often 
+            very upsetting to your family.
+
+<P>When your body experiences anxiety, it sort of revs you up, like a car. Hitting the gas pedal to get the car moving is similar to seeing 
+or hearing something that signals to your body to get moving. This bodily reaction is called fight-or-flight and leads to increased arousal. 
+Your heart pounds and you may feel like you are having a panic attack.  It may be hard to breathe. The digestive system shuts down, and your 
+palms might sweat. Adrenaline, like a car\'s gas, kicks the body into gear so that you can get out of a situation or protect yourself. It 
+probably helped you act and maybe even survive during the event, but in PTSD, this reaction happens even when you aren\'t in danger. Things 
+that remind you of the trauma or trigger the same reaction as the trauma cause your body to go into fight-or-flight, making you jumpy, 
+jittery, shaky, and easily startled. You might hear a loud noise, and while before the trauma that might not have made you jump, after it, 
+you may have a boost of adrenaline and your body is ready to fight or run away. This physical hyperarrousal makes it difficult to think as 
+clearly. Your body is in survival mode and you may focus only on what you see as dangerous and can\'t concentrate on anything else or think 
+as clearly. It can also make it difficult to calm down enough to sleep. It can also make you irritable and impatient, especially if you 
+aren\'t sleeping well. While fight-or-flight is helpful to survival, the extra energy it shoots into our body isn\'t helpful in day-to-day 
+life. It can make the world seem full of danger. Another reaction to danger is to freeze and this can also happen during a trauma. 
+		
+		<P>As we said, irritability and anger are common reactions to trauma. This might be confusing when you feel angry with people you 
+		are close to and feel anger more often than you ever did. Not only might you become angry with others, you can become more easily 
+		angered in different situations, impatient when things take too long or traffic is slow. You might also be angry with yourself. 
+		Some people feel like they should be able to live life just like before the trauma. 
+		
+		<P>Feelings of guilt or shame are very common following a traumatic event. Sometimes people blame themselves for things they did or 
+		didn\'t do to survive or to help others survive. You may feel ashamed because during the trauma you acted in a way you normally 
+		won\'t or guilty because you survived while others didn\'t. 
+		
+		<P>Grief and depression are also common after a trauma. This can include feeling hopeless or despairing. You might cry more often or 
+		not at all. You might lose interest in people and activities you used to enjoy. You may feel that plans you made for the future 
+		no longer matter or that life isn\'t worth living. This can lead to wishing you were dead or make you do something, or want to do 
+		something, to hurt or kill yourself. Along with this, you might grieve the life that you once had or planned to have. If you are 
+		feeling this way, please touch this number to talk to someone and get help.
+		
+		<P>Trauma also can change your view of the world and your own self-image in a negative way. You may tell yourself, "If I hadn\'t been 
+		weak or had not done that, this wouldn\'t have happened to me." You might feel more negative about yourself after the trauma. 
+		
+		<P>It is also common to see others more negatively and feel that you can\'t trust anyone. If you used to think that the world was 
+		relatively predictable and safe, trauma can change that view. It can convince you that the world is dangerous and others aren\'t 
+		to be trusted. These negative thoughts can make you feel that you have completely changed because of the trauma and relationships 
+		might now be tense. If you feel you can\'t trust anyone and if it is hard to feel close to people, imtimacy – both emotional and 
+		physical - may also become very difficult. 
+		
+		<P>This change can impact sexual relationships. Some people find it difficult to want to have sex or even be interested in it. This 
+		can be impacted by the change in trust but also because of the emotional numbing. Like mentioned earlier, if you are trying to not 
+		feel any negative feelings, this can interfere with your ability to feel anything positive. 
+		
+		<P>Another way of numbing or trying to change the way you feel is through the use of alcohol or drugs. While there is nothing wrong 
+		with responsible drinking, if you are using it to change how you think or feel about the trauma, it can become a problem. While 
+		increased drinking or drug use can offer a temporary fix, it often further slows down your recovery and causes problems of its own.
+
+<P>Many reactions to trauma are connected to one another. For example, a flashback may make you feel out of control and cause fear and anxiety. 
+Many people think that this common reaction to trauma means that they are "going crazy" or "losing it." These thoughts can make you even
+ more anxious. One of the reasons to go over the common reactions to trauma is to point out that PTSD is more than just nightmares and 
+ flashbacks. It is also to inform you that as you become aware of the changes that have happened because of the trauma, and as you process 
+ these experiences during treatment, the symptoms should become less distressing as you understand more about what you might be experiencing.
+    ]]>
+    </string>
+    <string name="choose_scenarios">Please choose In Vivo Homework Scenarios from the list below:</string>
+    <string name="pcl_assessment">PCL Assessment</string>
+    <string name="review_previe">Review Imaginal Exposure Homework</string>
+    <string name="review_invivo">Review Added In Vivo Items</string>
+    <string name="review_vivo_homework">Review In Vivo Homework</string>
+    <string name="review_vivo_homework_text">\nPlease select an <b>In VIVO item</b> for <b>review</b>:\n</string>
+    <string name="eula_activity_title">Eula</string>
+    <string name="suds_anchors_activity_title">SUDS Anchors</string>
+    <string name="eula_title">License</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_refuse">Refuse</string>
+    <string name="eula_content">        <![CDATA[
+
+
+<P>NATIONAL CENTER FOR TELEHEALTH AND TECHNOLOGY (T2)
+
+<P>UNITED STATES DEPARTMENT OF VETERANS AFFAIRS (\"VA\")
+
+<P>SOFTWARE END USER LICENSE AGREEMENT
+
+<P>By agreeing to have any of T2/VA\’s software products installed on to your device and by subsequent use of the Licensed Software, you agree to comply with the terms of this general End User License Agreement ("EULA") where no specific agreement is in place between T2/VA and the user of the software. If you do not agree to the terms of this EULA, do not install or use the Licensed Software but uninstall it from your device. This EULA applies to any upgrades and supplements to the original Licensed Software provided and is referred to on your opening screen.
+
+<hr>
+<ol>
+<li> The Licensed Software is owned by T2 a division of the US Defense Centers of Excellence (DCOE) and the United States Department of Defense (DOD)and the VA. The Licensed Software is licensed, not sold, only on the terms of this EULA. Acceptance and installation of the software indicates your acceptance of the terms and conditions of this EULA.
+
+<li> Upon installation of the Licensed Software, you will acquire the right to use the Licensed Software, directly from T2/VA. You assume responsibility for the selection of the program to achieve your intended results, and for the installation, use and results obtained from the Licensed Software.
+
+<li> T2/VA and you acknowledge that this Agreement is concluded between T2/VA and you only, and not with Apple. T2/VA is solely responsible for the Licensed Software and its content.
+
+<li> In consideration of your acceptance of the terms and conditions contained in this EULA, T2/VA grants you a non-exclusive license to use the Licensed Software and the associated documentation for your own needs on one device. You are not licensed to rent, lease, transfer, or distribute the Licensed Software.
+
+<li> Title to the Licensed Software, including media and documentation, remain with T2/VA. You may not copy, reproduce or make data transmissions, in whole or in part, except as is necessary for back-up or archival purposes. You may not reverse engineer, translate, disassemble, decompile the Licensed Software or create similar software in whole or in part.
+
+<li> The license is effective upon acceptance and installation of the Licensed Software and shall continue until terminated. You may terminate it at any time by uninstalling the Licensed Software. T2/VA has the right to terminate this Agreement if you fail to comply with any term or condition of this EULA. Upon termination you shall stop all use of the Software and uninstall the Licensed Software.
+
+<li> Confidentiality obligations pertaining to the Licensed Software will survive any termination of this EULA, to include the application, design, and functionality.
+
+<li> This Licensed Software is distributed AS IS, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranties of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+<li> In no event will T2/VA be liable for any damages, including those for loss of data, loss of use, or indirect, special, incidental or consequential damages in any way related to or arising out of the use of the Licensed Software, whether based upon warranty, contract, or otherwise, whether or not injury was sustained by persons or property or otherwise, and whether or not loss was sustained from, or arose out of, use of Licensed Software . You agree to waive any and all claims against the U.S. Government, T2, VA, its contractors, their subcontractors, and shall indemnify and hold harmless the U.S. Government, its contractors, and their subcontractors for any damage that you may incur from your use of the Licensed Software.
+
+<li> T2/VA shall be neither liable nor responsible for any maintenance or updating of the provided Licensed Software, nor for correction of any errors in the Licensed Software.
+
+<li> This Agreement shall be construed and enforced in accordance with federal law and each party agrees to be subject to those relevant laws for all purposes.
+
+<li> It is understood and acknowledged that T2/VA has the absolute right to obtain injunctive relief to protect T2\'s/VA\'s proprietary rights.
+
+<li> By using the Licensed Software, you further agree that this is the complete and exclusive statement of the Agreement which supersedes any proposal or prior agreement, oral or written, and any other communications relating to the subject matter of this EULA.
+
+<li> If any provision of this Agreement is held to be invalid or unenforceable the remaining provisions will not be affected.
+
+<li> For statistical purposes T2/VA collects anonymous usage data and sends it to a data provider. By accepting this agreement, it is understood that this feature can be disabled through the settings screen at any time.
+
+<li> PRIVACY NOTICE: No individually identifiable data is transferred or transmitted to T2/VA in any way through the use of the Licensed Software. All individually identifiable data entered by you remains your sole property and will not be accessed by VA without your further express consent. You also acknowledge that it is your sole responsibility to protect and otherwise secure any information captured and stored by the software once installed on your device.
+
+<li> DISCLAIMER: The content of this application is intended for use only as an informative tool.  It is not, is not intended to be, and should not be used in any way as a substitute for professional medical advice or training.  The accuracy of the information provided is not guaranteed.  You acknowledge in initiating this application that the information is not meant to diagnose a health condition or disease and is not meant to develop a health treatment plan.  If you are in an emergency or life-threatening medical situation, seek medical assistance immediately.  Dial emergency number (911 in the USA) for emergency medical services.
+
+<P>External Links: The appearance of external hyperlinks does not constitute endorsement by the United States Department of Defense or United States Department of Veterans Affairs of the linked websites, or the information, products or services contain therein. The United States Department of Defense and Department of Veterans Affiars does not exercise any editorial control over the information you may find at these locations. All links are provided consistent with the stated purpose of these DoD/VA websites.
+	]]>
+    </string>
+    <string name="complete_text">Congratulations! You have successfully completed the Prolonged Exposure Therapy program.</string>
+
+</resources>
