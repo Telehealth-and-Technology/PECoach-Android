@@ -11,8 +11,11 @@ import org.t2health.pe.tables.Rating;
 import org.t2health.pe.tables.UserQAAnswer;
 
 import zencharts.charts.DateChart;
+import zencharts.charts.LineChart;
 import zencharts.data.DatePoint;
 import zencharts.data.DateSeries;
+import zencharts.data.LinePoint;
+import zencharts.data.LineSeries;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -28,7 +31,7 @@ public class CompareInvivoRatingsActivity extends ABSSessionNavigationActivity {
 	private static final String KEY_PRE_RATING = "preRating";
 
 	//Graphing vars
-	public DateChart dateChart;
+	public LineChart lineChart;
 	public boolean chartMode = false;
 	private ListView lvReport;
 	
@@ -40,14 +43,14 @@ public class CompareInvivoRatingsActivity extends ABSSessionNavigationActivity {
 		this.setContentView(R.layout.suds_report_activity);
 		lvReport = ((ListView)this.findViewById(R.id.list));
 		
-		dateChart = (DateChart)this.findViewById(R.id.datechart);
-		dateChart.LoadFont("Elronmonospace.ttf", 16, 2, 2);
+		lineChart = (LineChart)this.findViewById(R.id.linechart);
+		lineChart.loadFont("Elronmonospace.ttf", 16, 2, 2);
 //        dateChart.showGrid = true;
 //        dateChart.scrollGrid = false;
 //        dateChart.showStars = false;
 //        dateChart.screenPoints = 4;
         //dateChart.setMinMaxYValue(0, 100);
-        dateChart.setVisibility(View.GONE);
+		lineChart.setVisibility(View.GONE);
         
         this.setRightButtonText("Chart");
 		this.setRightButtonVisibility(View.VISIBLE);
@@ -62,13 +65,13 @@ public class CompareInvivoRatingsActivity extends ABSSessionNavigationActivity {
 		for(int i = 0; i < invivos.size(); ++i) {
 			Invivo invivo = invivos.get(i);
 			
-			DateSeries sudsSeries = new DateSeries(this, R.drawable.quadstar);
+			LineSeries sudsSeries = new LineSeries(this, R.drawable.quadstar);
 	        //sudsSeries.dashEffect = new float[] {i,20};
 	        sudsSeries.lineColor = Color.BLUE;
 	        sudsSeries.lineWidth = 5;
-	        sudsSeries.dateLabels = false;
-			DatePoint tmpPointa = new DatePoint(Calendar.getInstance().getTimeInMillis(), 0, "");
-			DatePoint tmpPointb = new DatePoint(Calendar.getInstance().getTimeInMillis(), 0, "");
+	        sudsSeries.xLabels = false;
+			LinePoint tmpPointa = new LinePoint(0, "", "");
+			LinePoint tmpPointb = new LinePoint(0, "", "");
 			HashMap<String,Object> item = new HashMap<String,Object>();
 			item.put(KEY_TITLE, invivo.title);
 			
@@ -79,16 +82,14 @@ public class CompareInvivoRatingsActivity extends ABSSessionNavigationActivity {
 				item.put(KEY_POST_RATING, rating.postValue<0?"":rating.postValue+"");
 				
 				tmpPointa.label = invivo.title;
-				tmpPointa.timeStamp = rating.preTimestamp;
 				tmpPointa.value = rating.preValue;
 				tmpPointb.label = invivo.title;
-				tmpPointb.timeStamp = rating.postTimestamp;
 				tmpPointb.value = rating.postValue;
 			}
 			items.add(item);
 			sudsSeries.add(tmpPointa);
 			sudsSeries.add(tmpPointb);
-			dateChart.AddSeries(sudsSeries);
+			lineChart.addSeries(sudsSeries);
 		}
 
 		ViewGroup headerView = (ViewGroup)getLayoutInflater().inflate(R.layout.list_item_compare_rating, null);
@@ -118,13 +119,13 @@ public class CompareInvivoRatingsActivity extends ABSSessionNavigationActivity {
 		if(chartMode)
 		{
 			chartMode = false;
-			dateChart.setVisibility(View.GONE);
+			lineChart.setVisibility(View.GONE);
 			this.setRightButtonText("Chart");
 		}
 		else
 		{
 			chartMode = true;
-			dateChart.setVisibility(View.VISIBLE);			
+			lineChart.setVisibility(View.VISIBLE);			
 			this.setRightButtonText("List");
 		}
 	}

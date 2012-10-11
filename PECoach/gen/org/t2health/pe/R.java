@@ -156,7 +156,6 @@ public final class R {
         public static final int contactName=0x7f0b002d;
         public static final int custom_title=0x7f0b0031;
         public static final int date=0x7f0b0060;
-        public static final int datechart=0x7f0b0054;
         public static final int desc=0x7f0b0032;
         public static final int dynamicTable=0x7f0b0065;
         public static final int emptyText=0x7f0b0004;
@@ -175,6 +174,7 @@ public final class R {
         public static final int inputsContainer=0x7f0b0067;
         public static final int label=0x7f0b0038;
         public static final int learn=0x7f0b0027;
+        public static final int linechart=0x7f0b0054;
         public static final int list=0x7f0b0003;
         public static final int listHeader=0x7f0b0000;
         public static final int listen_imaginal_exp=0x7f0b0041;

@@ -8,6 +8,7 @@ import java.util.List;
 import org.t2health.pe.ActivityFactory;
 import org.t2health.pe.Constant;
 import org.t2health.pe.R;
+import org.t2health.pe.RecordService;
 import org.t2health.pe.SharedPref;
 import org.t2health.pe.tables.Invivo;
 import org.t2health.pe.tables.Session;
@@ -41,6 +42,7 @@ public abstract class ABSSessionItemListActivity extends ABSSessionNavigationAct
 	private int[] SessionIDS;
 
 	public static final int Menu1 = Menu.FIRST + 1;
+	public static final int Menu2 = Menu.FIRST + 2;
 
 	protected static enum ACTIONS {
 		record_session,
@@ -142,7 +144,38 @@ public abstract class ABSSessionItemListActivity extends ABSSessionNavigationAct
 		Intent tmpIntent;
 		switch(action) {
 		case record_session:
-			startActivityForResult(new Intent(this, RecordSessionActivity.class), 0);
+			
+			//Only allow if not already recording another session //Code appears in FinalSessionActivity.java also
+			boolean canRecord = false;
+			if(RecordService.getService() != null)
+				if(RecordService.getService().isRecording())
+					if(Constant.recordingSession.equals(""+session.index+session.section))
+						canRecord = true;
+					else
+						canRecord = false;
+				else
+					canRecord = true;
+			else
+				canRecord = true;
+			
+			if(canRecord)
+				startActivityForResult(new Intent(this, RecordSessionActivity.class), 0);
+			else
+			{
+				new AlertDialog.Builder(this)
+				.setTitle("Alert!")
+				.setMessage("You must stop the current recording before starting a new one.")
+				.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						
+					}
+				})
+
+				.create()
+				.show();
+			}
+			
 			break;
 
 		case pcl_assessments:
@@ -354,6 +387,13 @@ public abstract class ABSSessionItemListActivity extends ABSSessionNavigationAct
 				//item1.setAlphabeticShortcut('a');
 				item1.setIcon(android.R.drawable.ic_menu_close_clear_cancel);
 			}
+			
+		}
+		
+		MenuItem item2 = menu.add(0, Menu2, 0, "Exit PECoach");
+		{
+			//item1.setAlphabeticShortcut('a');
+			item2.setIcon(android.R.drawable.ic_menu_close_clear_cancel);
 		}
 	}
 
@@ -361,6 +401,9 @@ public abstract class ABSSessionItemListActivity extends ABSSessionNavigationAct
 		switch (item.getItemId()) {
 		case Menu1:
 			ShowAlertSplit();
+			break;
+		case Menu2:
+			System.exit(0);
 			break;
 		}
 		return false;

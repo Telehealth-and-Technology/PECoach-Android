@@ -68,7 +68,11 @@ public class DBAdapter extends SQLiteOpenHelper {
 	}
 	
 	private void dbUpgrade(SQLiteDatabase db) {
+		try
+		{
 		db.execSQL("ALTER TABLE 'session' ADD COLUMN 'section' INTEGER;");
+		}
+		catch(Exception ex){}
 		//db.execSQL("ALTER TABLE 'group' ADD COLUMN 'visible' INTEGER;");
 		//db.execSQL("UPDATE 'group' SET 'visible'=1;");
 	}

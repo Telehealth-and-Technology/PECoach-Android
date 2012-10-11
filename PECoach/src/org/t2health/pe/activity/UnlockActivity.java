@@ -3,6 +3,7 @@ package org.t2health.pe.activity;
 import org.t2health.pe.R;
 import org.t2health.pe.SharedPref;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -28,6 +29,9 @@ public class UnlockActivity extends ABSCustomTitleActivity implements OnKeyListe
 		this.lockPin = SharedPref.Security.getPin(sharedPref);
 
 		this.findViewById(R.id.forgotPinButton).setOnClickListener(this);
+		
+		pinEditText.requestFocus();
+		
 	}
 
 	@Override
@@ -59,7 +63,15 @@ public class UnlockActivity extends ABSCustomTitleActivity implements OnKeyListe
 		if(v.getId() == R.id.pin) {
 			String enteredPin = pinEditText.getText().toString().trim();
 			if(enteredPin.length() > 0 && enteredPin.equals(lockPin)) {
-				this.setResult(RESULT_OK);
+				
+				if (getParent() == null) {
+				    setResult(Activity.RESULT_OK, this.getIntent());
+				}
+				else {
+				    getParent().setResult(Activity.RESULT_OK, this.getIntent());
+				}
+				
+				//this.setResult(Activity.RESULT_OK);
 				this.finish();
 			}
 		}

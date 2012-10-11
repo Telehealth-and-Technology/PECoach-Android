@@ -19,7 +19,8 @@ public class Constant {
 
 	public static final String FLURRY_KEY = "W2EVYTHHF3U4LEBFCTC1";
 
-
+	public static String recordingSession = "";
+	
 	public static final File getExternalStorageDir(Context c) {
 		return c.getExternalCacheDir();
 	}
@@ -31,6 +32,6 @@ public class Constant {
 
 	public static class DB {
 		public static final String NAME = "pe.db";
-		public static final int VERSION = 7;
+		public static final int VERSION = 8;
 	}
 }
