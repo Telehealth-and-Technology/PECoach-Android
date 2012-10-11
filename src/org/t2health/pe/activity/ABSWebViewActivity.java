@@ -15,8 +15,11 @@ public class ABSWebViewActivity extends ABSNavigationActivity {
 
 		this.setContentView(R.layout.webview_layout);
 
-		this.setRightButtonVisibility(View.GONE);
+		this.setBackButtonVisibity(View.GONE);
+		this.setRightButtonVisibility(View.VISIBLE);
+		this.setRightButtonText("Done");
 		this.setToolboxButtonVisibility(View.GONE);
+		this.setRightButtonContentDescription("Done");
 	}
 	
 	protected void setContent(String contentString) {
@@ -24,5 +27,10 @@ public class ABSWebViewActivity extends ABSNavigationActivity {
 		WebViewUtil.formatWebViewText(this, wv, contentString, android.R.color.primary_text_dark);
 		//wv.setBackgroundColor(0); // make the bg transparent
 		//wv.loadDataWithBaseURL("fake:/blah", contentString, "text/html", "utf-8", null);
+	}
+	
+	@Override
+	protected void onRightButtonPressed() {
+	 this.finish();
 	}
 }

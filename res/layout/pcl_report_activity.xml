@@ -11,8 +11,8 @@
         android:text="@string/pcl_reports_activity_title"
         style="@style/headerText" />
     
-    <zencharts.charts.DateChart
-            android:id="@+id/datechart"
+    <zencharts.charts.LineChart
+            android:id="@+id/linechart"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="0"

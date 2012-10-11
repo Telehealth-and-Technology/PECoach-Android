@@ -5,10 +5,13 @@ import java.util.ArrayList;
 import org.t2health.pe.ActivityFactory;
 import org.t2health.pe.Constant;
 import org.t2health.pe.R;
+import org.t2health.pe.RecordService;
 import org.t2health.pe.SharedPref;
 import org.t2health.pe.tables.Recording;
 import org.t2health.pe.tables.Session;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -94,7 +97,37 @@ public class FinalSessionActivity extends ABSSessionNavigationActivity implement
 			break;
 
 		case R.id.sessionrecord:
-			startActivityForResult(new Intent(this, RecordSessionActivity.class), 0);
+			//Only allow if not already recording another session
+			boolean canRecord = false;
+			if(RecordService.getService() != null)
+				if(RecordService.getService().isRecording())
+					if(Constant.recordingSession.equals(""+session.index+session.section))
+						canRecord = true;
+					else
+						canRecord = false;
+				else
+					canRecord = true;
+			else
+				canRecord = true;
+			
+			if(canRecord)
+				startActivityForResult(new Intent(this, RecordSessionActivity.class), 0);
+			else
+			{
+				new AlertDialog.Builder(this)
+				.setTitle("Alert!")
+				.setMessage("You must stop the current recording before starting a new one.")
+				.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						
+					}
+				})
+
+				.create()
+				.show();
+			}
+
 			break;
 
 		case R.id.listen_session:

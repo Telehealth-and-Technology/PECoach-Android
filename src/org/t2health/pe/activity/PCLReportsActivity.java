@@ -7,8 +7,11 @@ import org.t2health.pe.R;
 import org.t2health.pe.tables.UserQAAnswer;
 
 import zencharts.charts.DateChart;
+import zencharts.charts.LineChart;
 import zencharts.data.DatePoint;
 import zencharts.data.DateSeries;
+import zencharts.data.LinePoint;
+import zencharts.data.LineSeries;
 
 import android.database.Cursor;
 import android.graphics.Color;
@@ -26,7 +29,7 @@ public class PCLReportsActivity extends ABSSessionNavigationActivity {
 	private Cursor answerCursor;
 
 	//Graphing vars
-	public DateChart dateChart;
+	public LineChart lineChart;
 	public boolean chartMode = false;
 	
 	@Override
@@ -37,19 +40,19 @@ public class PCLReportsActivity extends ABSSessionNavigationActivity {
 		// Set this content view.
 		this.setContentView(R.layout.pcl_report_activity);
 
-		dateChart = (DateChart)this.findViewById(R.id.datechart);
-		dateChart.LoadFont("Elronmonospace.ttf", 16, 2, 2);
+		lineChart = (LineChart)this.findViewById(R.id.linechart);
+		lineChart.loadFont("Elronmonospace.ttf", 16, 2, 2);
 //        dateChart.showGrid = true;
 //        dateChart.scrollGrid = false;
 //        dateChart.showStars = false;
         //dateChart.setMaxYValue(100);
-        dateChart.setVisibility(View.GONE);
+		lineChart.setVisibility(View.GONE);
         
-        DateSeries pclSeries = new DateSeries(this, R.drawable.quadstar);
+        LineSeries pclSeries = new LineSeries(this, R.drawable.quadstar);
         pclSeries.dashEffect = new float[] {10,20};
         pclSeries.lineColor = Color.BLUE;
         pclSeries.lineWidth = 5;
-		pclSeries.dateLabels = false;
+		pclSeries.xLabels = false;
 		
 		lvReport = ((ListView)this.findViewById(R.id.list));
 		
@@ -81,7 +84,7 @@ public class PCLReportsActivity extends ABSSessionNavigationActivity {
 				}
 			}
 			
-			pclSeries.add(new DatePoint(timeStamp, (int)total, "" + (int)total));
+			pclSeries.add(new LinePoint((int)total, "" + (int)total, ""));
 			
 			//Create a report entry line
 			HashMap<String, String> map;
@@ -93,7 +96,7 @@ public class PCLReportsActivity extends ABSSessionNavigationActivity {
 			reportList.add(map);
 		}
 		
-		dateChart.AddSeries(pclSeries);
+		lineChart.addSeries(pclSeries);
 		
 		//Setup the list adapter
 		String[] from = { "line1", "line2", "line3" };
@@ -108,13 +111,13 @@ public class PCLReportsActivity extends ABSSessionNavigationActivity {
 		if(chartMode)
 		{
 			chartMode = false;
-			dateChart.setVisibility(View.GONE);
+			lineChart.setVisibility(View.GONE);
 			this.setRightButtonText("Chart");
 		}
 		else
 		{
 			chartMode = true;
-			dateChart.setVisibility(View.VISIBLE);			
+			lineChart.setVisibility(View.VISIBLE);			
 			this.setRightButtonText("List");
 		}
 	}

@@ -82,6 +82,8 @@ public class RecordSessionActivity extends ABSSessionNavigationActivity implemen
 
 		//deletePreviousRecordings();
 
+		Constant.recordingSession = ""+session.index+session.section;
+		
 		// get the session recording.
 		ArrayList<Recording> recordings = session.getRecordings();
 		if(recordings.size() > 0) {
@@ -93,7 +95,7 @@ public class RecordSessionActivity extends ABSSessionNavigationActivity implemen
 		}
 		
 		thisContext = this;
-		notificationIntent = new Intent(this, org.t2health.pe.activity.SessionActivity.class);
+		notificationIntent = new Intent(this, org.t2health.pe.activity.RecordSessionActivity.class);
 		notificationIntent.putExtra(SessionActivity.EXTRA_SESSION_ID, session._id);
 		notificationIntent.putExtra(SessionActivity.EXTRA_START_RECORD_ACTIVITY, true);
 

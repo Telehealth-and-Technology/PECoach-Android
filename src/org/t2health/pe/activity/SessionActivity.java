@@ -8,7 +8,9 @@ import java.util.ArrayList;
 import org.t2health.pe.Accessibility;
 import org.t2health.pe.ActivityFactory;
 import org.t2health.pe.AppSecurityManager;
+import org.t2health.pe.Constant;
 import org.t2health.pe.R;
+import org.t2health.pe.RecordService;
 import org.t2health.pe.SharedPref;
 import org.t2health.pe.tables.Session;
 
@@ -67,8 +69,11 @@ public class SessionActivity extends ABSSessionItemListActivity {
 	@Override
 	protected ArrayList<SessionAction> getSessionActions() {
 		ArrayList<SessionAction> sessionActions = new ArrayList<SessionAction>();
+		Log.v("Session", ""+session.index);
 		if(session.index == 0) {
+			
 			sessionActions.add(availableActions.get(ACTIONS.record_session));
+			
 			sessionActions.add(availableActions.get(ACTIONS.pcl_assessments));
 
 		} else if(session.index == 1) 
@@ -78,11 +83,13 @@ public class SessionActivity extends ABSSessionItemListActivity {
 				if(session.section == 0)
 				{
 					sessionActions.add(availableActions.get(ACTIONS.record_session));
+					
 					sessionActions.add(availableActions.get(ACTIONS.review_homework_from_previous));
 				}
 				else
 				{
 					sessionActions.add(availableActions.get(ACTIONS.record_session));
+					
 					sessionActions.add(availableActions.get(ACTIONS.review_homework_from_previous));
 					sessionActions.add(availableActions.get(ACTIONS.suds_anchors));
 					sessionActions.add(availableActions.get(ACTIONS.create_invivo_and_suds));
@@ -93,6 +100,7 @@ public class SessionActivity extends ABSSessionItemListActivity {
 			{
 
 				sessionActions.add(availableActions.get(ACTIONS.record_session));
+				
 				sessionActions.add(availableActions.get(ACTIONS.review_homework_from_previous));
 				sessionActions.add(availableActions.get(ACTIONS.suds_anchors));
 				sessionActions.add(availableActions.get(ACTIONS.create_invivo_and_suds));
@@ -100,13 +108,16 @@ public class SessionActivity extends ABSSessionItemListActivity {
 			}
 
 		} else if(session.index == 2) {
+
 			sessionActions.add(availableActions.get(ACTIONS.record_session));
 			sessionActions.add(availableActions.get(ACTIONS.pcl_assessments));
 			sessionActions.add(availableActions.get(ACTIONS.review_homework_from_previous));
 			sessionActions.add(availableActions.get(ACTIONS.choose_homework_scenarios));
 
 		} else {
+			
 			sessionActions.add(availableActions.get(ACTIONS.record_session));
+			
 			if(session.index % 2 == 0) {
 				sessionActions.add(availableActions.get(ACTIONS.pcl_assessments));
 			}
@@ -164,7 +175,11 @@ public class SessionActivity extends ABSSessionItemListActivity {
 
 	@Override
 	protected void onRightButtonPressed() {
-		if(!this.showStillRecordingToast()) {
+		
+		//Allowed to navigate
+		this.showStillRecordingToast();
+		//if(!this.showStillRecordingToast()) 
+		{
 			if(isRightButtonEnabled()) {
 				startActivity(
 						ActivityFactory.getHomeworkActivity(this, session)

@@ -160,7 +160,7 @@
     <string name="mark_imaginal_exposure_on">End Imaginal Exposure Portion</string>
     <string name="mark_imaginal_exposure_off">Begin Imaginal Exposure Portion</string>
     <string name="recording_title">Recording Session</string>
-    <string name="recording_desc">Touch to stop recording.</string>
+    <string name="recording_desc">Touch to go to Session Recording</string>
     <string name="listen_to_recording">Listen to Entire Session Recording</string>
     <string name="pcl_assessments">PCL Assessment</string>
     <string name="record_session">Record Session</string>
