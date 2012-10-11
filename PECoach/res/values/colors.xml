@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<resources>
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+	<drawable name="yellow">#77ffff00</drawable>
+	
+	<drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <!-- drawable name="transparent_background">#00000000</drawable-->
+    <drawable name="transparent_background">#a0000000</drawable>
+
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="solid_white">#ffffff</color>
+
+ 	<color name="candidate_normal">#FF000000</color>
+    <color name="candidate_recommended">#FFE35900</color>
+    <color name="candidate_other">#ff808080</color>
+    <color name="candidate_background">#bbffffff</color>
+    
+    <color name="default_text_color">#FFEAEAEA</color>
+    
+    <!-- Retrieved via Resources.getColor() and friends. -->
+    <color name="red">#f00</color>
+
+    <!-- Retrieved via Resources.getDrawable() and friends. -->
+    <drawable name="semi_black">#80000000</drawable>
+    
+    <drawable name="grey_button">#736F6E</drawable>
+    <drawable name="yellow_tab">#FAF8CC</drawable>
+    
+    <color name="dark_blue">#153E7E</color>
+
+</resources>

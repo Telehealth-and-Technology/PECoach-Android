@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	  	<style name="MyTheme" parent="android:Theme.Light">
+	  		<item name="android:windowTitleSize">48dip</item>
+	  		<item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+			
+    		<item name="android:windowBackground">@drawable/pe_bkgrd</item>
+    		<item name="android:buttonStyle">@style/Button</item>
+    		<item name="android:imageButtonStyle">@style/Button</item>
+	  	</style>
+	  	
+	  	<style name="MyThemeDark" parent="@style/MyTheme">
+	  		<item name="android:windowBackground">@drawable/dark_bg</item>
+	  	</style>
+</resources>

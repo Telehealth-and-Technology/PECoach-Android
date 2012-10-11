@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/org.t2health.pe"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+	   android:orientation="vertical"
+	   android:layout_width="fill_parent"
+	   android:layout_height="fill_parent">
+
+	    <TextView
+	    	android:id="@+id/label"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/final_session"
+	        style="@style/headerText" />
+
+	    <Button
+	    	android:id="@+id/sessionrecord"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/record_session"
+	    	android:drawableLeft="@drawable/record_icon" />
+	    
+	    <Button
+		    	android:id="@+id/pcl_final"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/pcl_assessments"/>
+	    
+	    <Button
+	    	android:id="@+id/review_homework"
+	    	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	    	android:text="@string/review_homework_from_previous_n" />
+
+	    <Button
+	    	android:id="@+id/rerate_suds"
+	    	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	    	android:text="@string/rerate_suds" />
+
+	    <Button
+	    	android:id="@+id/compareSuds"
+	    	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	    	android:text="@string/compare_suds" />
+	    
+	    <Button
+	    	android:id="@+id/pcl_report"
+	    	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	    	android:text="@string/pcl_reports_activity_title" />
+
+		<LinearLayout
+			android:id="@+id/playRecordingsBlock"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:visibility="gone">
+		    <View
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="2dip"
+		    	style="@style/divider" />
+
+			<Button
+				android:id="@+id/listen_session"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/listen_to_recording"
+				android:drawableLeft="@drawable/listen_icon" />
+
+		    <Button
+		    	android:id="@+id/listen_imaginal_exp"
+		    	android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		    	android:text="@string/listen_imaginal_exp"
+		    	android:visibility="gone" />
+    	</LinearLayout>
+	</LinearLayout>
+</ScrollView>
