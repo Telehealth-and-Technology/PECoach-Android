@@ -3,6 +3,12 @@ PECoach
 
 [Official Site: http://www.t2health.org](http://t2health.org)
 
+PE Coach is the first mobile app designed to support the tasks associated with prolonged exposure treatment for PTSD. Providing hip-pocket access to the necessary tools for successful PE participation, the app includes audio recording capability for easy playback after sessions; tools to support patient tasks between sessions; and visual displays of symptom reduction over time.In addition, PE Coach is integrated with smartphone calendar functionality to encourage patient recall and session attendance.
+
+[iOS Clinician's Guide](http://t2health.dcoe.mil/sites/default/files/PE-Coach_Clinical-Guidelines_iOS_508v2.pdf)
+
+[Android Clinician's Guide](http://t2health.dcoe.mil/sites/default/files/PE-Coach_Clinician-Guide_Android_508v7.pdf)
+
 
 Submitting bugs
 ===============
